@@ -7,7 +7,7 @@ const Popular = ()=>{
     const [popularProducts,setPopularProducts] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:4000/popularinwomen')
+        fetch('https://zakzingbackend.onrender.com/popularinwomen')
         .then((response)=>response.json())
         .then((data)=>setPopularProducts(data));
         //square bracket means it will be executed once
